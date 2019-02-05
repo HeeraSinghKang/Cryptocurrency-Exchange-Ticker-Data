@@ -52,4 +52,4 @@ with urllib.request.urlopen("https://api.bitfinex.com/v2/tickers?symbols=ALL") a
             'PRICE': float(var[7])
             })
     with open('bitfinex.json', 'w') as outfile:  
-        json.dump(data, outfile)
+        json.dump(data, outfile )
