@@ -18,4 +18,4 @@ with urllib.request.urlopen("https://api.coinbase.com/v2/exchange-rates") as url
             "COIN":str(coin) , "PRICE": 1/price
             }) 
     with open('coinbase.json', 'w') as outfile:  
-        json.dump(data, outfile)
+        json.dump(data, outfile )
